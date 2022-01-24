@@ -4,9 +4,9 @@ import { BigDecimal, Address, BigInt } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD, UNTRACKED_PAIRS } from './helpers'
 
 const WETH_ADDRESS = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c'  //WBNB
-const USDC_WETH_PAIR = '0x700d29fad9096130120299e38f1aa10caa664d5e' // created 10008355
-const DAI_WETH_PAIR = '0xf3a30324075f3b4066110d10668af75addd85ed5' // created block 10042267
-const USDT_WETH_PAIR = '0x1d1d1f966d9495ae075df980373fd64abcc3127e' // created block 10093341
+const USDC_WETH_PAIR = '0xd99c7f6c65857ac913a8f880a4cb84032ab2fc5b' // created 10008355
+const DAI_WETH_PAIR = '0xd99c7F6C65857AC913a8f880A4cb84032AB2FC5b' // created block 10042267
+const USDT_WETH_PAIR = '0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae' // created block 10093341
 
 export function getEthPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
@@ -44,6 +44,8 @@ let WHITELIST: string[] = [
   '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', // DAI
   '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d', // USDC
   '0x55d398326f99059ff775485246999027b3197955', // USDT
+  '0x83326A8b367543301E4Cb8d7b28c43193C421095',
+  '0x587C16b84c64751760f6e3e7e32F896634704352'
   // '0x0000000000085d4780b73119b644ae5ecd22b376', // TUSD
   // '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643', // cDAI
   // '0x39aa39c021dfbae8fac545936693ac917d5e7563', // cUSDC
